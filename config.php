@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 /**
  * Agency Template Configuration
  *
@@ -10,6 +8,11 @@ declare(strict_types=1);
  * @subpackage  Configuration
  */
 
+declare(strict_types=1);
+
+/**
+ * @var array $config Configuration
+ */
 $config['info']['company'] = 'Nuthead Designs';
 $config['info']['title'] = 'Nuthead Designs';
 $config['info']['motto'] = 'Crazy About Clients!';
