@@ -1,6 +1,6 @@
 # AVCorn Agency Template
 
-![Template Preview](assets/images/previews/preview-lg.png "Marketing Design Preview")
+![Template Preview](assets/images/previews/preview-lg.png "Agency Design Preview")
 
 A template for an agency.
 
