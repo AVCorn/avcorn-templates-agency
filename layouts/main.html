@@ -11,8 +11,13 @@
             }
 
             .header {
-                background: url("https://unsplash.it/2560/800") center center no-repeat;
+                background: linear-gradient(0deg, rgb(10, 10, 10) 0%, rgb(40, 40, 40) 100%);
+                background-color: rgb(15, 20, 25);
+                background-image: url("https://unsplash.it/2560/800");
+                background-position: bottom center;
+                background-repeat: no-repeat;
                 background-size: cover;
+                box-shadow: 0 0 5px #000;
                 color: #fff;
                 font-family: Halcom-Bold, Bold-Fallback, Arial, sans-serif;
                 font-size: 1.5em;
@@ -28,6 +33,7 @@
 
             .header .logo a {
                 background: rgba(0, 0, 0, 50%);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
                 color: #fff;
                 display: block;
                 font-size: 2em;
@@ -50,13 +56,14 @@
             }
 
             .header .navigation-inside {
-                background: rgba(256, 256, 256, 50%);
+                background: rgba(256, 256, 256, 60%);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 50%);
                 display: inline;
                 padding: 0.5em 0;
             }
 
             .header .navigation .navigation-inside:hover {
-                background: rgba(200, 200, 200, 50%);
+                background: rgba(200, 200, 200, 60%);
             }
 
             .header .navigation li li {
@@ -109,6 +116,21 @@
                 background: rgba(200, 200, 200, 60%);
             }
 
+            @media screen and (max-width: 39.9375em) {
+                .header .navigation li:hover {
+                    background: rgba(255, 255, 255, 60%);
+                }
+
+                .header .navigation li:last-child:hover {
+                    background: none;
+                }
+
+                .header .navigation li:last-child a {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
             .header .subtitle {
                 margin: 0.5em 0 0;
                 line-height: 0.8em;
@@ -122,6 +144,7 @@
 
             .footer {
                 background: rgb(0, 15, 25) url("assets/images/content/agency-bg-bottom-inside.jpg") center center no-repeat;
+                box-shadow: 0 0 5px #000;
                 color: #fff;
                 font-size: 1em;
                 font-weight: bold;

@@ -28,12 +28,19 @@
 
             @media screen and (min-width: 40em) {
                 .header {
-                    height: 1000px;
+                    height: 800px;
+                }
+            }
+
+            @media screen and (min-width: 60em) {
+                .header {
+                    height: 960px;
                 }
             }
 
             .header .logo a {
                 background: rgba(0, 0, 0, 50%);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
                 color: #fff;
                 display: block;
                 font-size: 2em;
@@ -61,6 +68,16 @@
 
             .header .navigation .navigation-inside:hover {
                 background: rgba(200, 200, 200, 50%);
+            }
+
+            @media screen and (max-width: 39.9375em) {
+                .header .navigation .navigation-inside:hover {
+                    background: none;
+                }
+
+                .header .navigation li:hover {
+                    background: rgba(200, 200, 200, 50%);
+                }
             }
 
             .header .navigation li li {
@@ -109,8 +126,8 @@
             }
 
             .header .subtitle {
-                margin: 0.5em 0 0;
-                font-size: 6em;
+                margin: 1em 0 0.2em;
+                font-size: 10vw;
                 font-weight: 100;
                 line-height: 1em;
             }
@@ -479,7 +496,7 @@
                     <br />
                 </div>
 
-                <div class="subtitle columns show-for-large large-12 rellax wow animate__slideInLeft" data-rellax-speed="2" data-wow-duration="2s">
+                <div class="subtitle columns show-for-medium medium-12 rellax wow animate__slideInLeft" data-rellax-speed="2" data-wow-duration="2s">
                     We are
                     <div class="brand row expanded">
                         <div class="columns small-1"></div>
