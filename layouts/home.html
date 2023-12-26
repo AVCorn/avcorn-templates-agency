@@ -258,28 +258,30 @@
                 text-shadow: none;
             }
 
-            .ribbon-inside:before {
-                content: "";
-                position: absolute;
-                display: block;
-                border-style: solid;
-                border-color: rgb(23, 121, 186) transparent transparent transparent;
-                border-width: 60px 240px;
-                bottom: -120px;
-                left: 120px;
-                z-index: -1;
-            }
+            @media screen and (min-width: 40em) {
+                .ribbon-inside:before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    border-style: solid;
+                    border-color: rgb(23, 121, 186) transparent transparent transparent;
+                    border-width: 60px 240px;
+                    bottom: -120px;
+                    left: 120px;
+                    z-index: -1;
+                }
 
-            .ribbon-inside:after {
-                content: "";
-                position: absolute;
-                display: block;
-                border-style: solid;
-                border-color: rgb(23, 121, 186) transparent transparent transparent;
-                border-width: 60px 240px;
-                bottom: -120px;
-                right: 120px;
-                z-index: -1;
+                .ribbon-inside:after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    border-style: solid;
+                    border-color: rgb(23, 121, 186) transparent transparent transparent;
+                    border-width: 60px 240px;
+                    bottom: -120px;
+                    right: 120px;
+                    z-index: -1;
+                }
             }
 
             .intro {
@@ -347,6 +349,7 @@
             .banner {
                 background: #001b3a;
                 margin: 0;
+                width:4320px !important;
             }
 
             .banner li.cell {
@@ -397,10 +400,20 @@
                 box-shadow: none;
             }
 
-            .spacer {
-                clear: both;
-                height: 16em;
-                width: 100%;
+            @media screen and (max-width: 39.9375em) {
+                .spacer {
+                    clear: both;
+                    height: 4em;
+                    width: 100%;
+                }
+            }
+
+            @media screen and (min-width: 40em) {
+                .spacer {
+                    clear: both;
+                    height: 16em;
+                    width: 100%;
+                }
             }
 
             .shadow {
@@ -524,18 +537,18 @@
             </article>
 
             <footer class="footer row padding-3 wow animate__fadeIn" data-wow-duration="2s">
-                <ul class="navigation menu expanded padding-3">
+                <ul class="navigation menu expanded padding-2">
                     <li class="show-for-large padding-1 text-left">
                         Polices
                         <ul class="menu vertical align-left">
                             <li>
-                                <a href="#">Privacy Policy</a>
+                                <a href="/privacy-policy">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="#">Cookies</a>
+                                <a href="/cookies">Cookies</a>
                             </li>
                             <li>
-                                <a href="#">Our Policies</a>
+                                <a href="/terms-of-use">Terms of Use</a>
                             </li>
                         </ul>
                     </li>
@@ -550,7 +563,7 @@
                     </li>
 
                     <li class="padding-1 text-right">
-                        <span class="show-for-medium padding-1">Connect</span>
+                        <span class="show-for-medium">Connect</span>
 
                         <ul class="social align-right">
                             {% include "components/social.html" %}
