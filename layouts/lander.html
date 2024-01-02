@@ -26,7 +26,7 @@
                 color: #fff;
                 font-family: Halcom-Bold, Bold-Fallback, Arial, sans-serif;
                 font-size: 1.5em;
-                height: 400px;
+                height: 220px;
                 text-shadow: 0px 0px 2em #000;
             }
 
@@ -306,18 +306,6 @@
                         {% include "/components/navigation.html" %}
                     </ul>
                 </div>
-
-                <div class="subtitle columns small-12 medium-8">
-                    {% block header %}{% endblock %}
-                </div>
-
-                <div class="connect columns show-for-medium medium-4 text-center padding-1">
-                    {% if map['/get-a-website'] %}
-                        <a class="button" href="/get-a-website">Connect</a>
-                    {% else %}
-                        <a class="button" href="/contact{{ linkparams }}">Connect</a>
-                    {% endif %}
-                </div>
             </header>
 
             <article id="content" class="content row expanded clearfix" data-magellan-target="content">
@@ -347,7 +335,11 @@
                         </li>
 
                         <li class="show-for-large padding-1 text-center">
-                            <a href="/contact{{ linkparams }}">Contact</a>
+                            {% if map['/get-a-website'] %}
+                                <a class="button" href="/get-a-website">Connect</a>
+                            {% else %}
+                                <a class="button" href="/contact{{ linkparams }}">Connect</a>
+                            {% endif %}
                         </li>
                         
 

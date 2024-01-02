@@ -3,6 +3,11 @@
     <head>
         <title>{% block title %}{% endblock %}</title>
 
+        <meta name="author" content="WebElements.agency">
+        <meta name="description" content="{% block description %}{% endblock %}">
+        <meta name="keywords" content="{% block keywords %}{% endblock %}">
+        <meta name="generator" content="AVCorn">
+   
         {% include template_path~"/components/head.html" %}
 
         <style>
@@ -518,7 +523,11 @@
                 </div>
 
                 <div class="connect columns show-for-medium medium-4 large-12 text-right padding-3">
-                    <a class="button" href="/contact{{ linkparams }}">Connect</a>
+                    {% if map['/get-a-website'] %}
+                        <a class="button" href="/get-a-website">Connect</a>
+                    {% else %}
+                        <a class="button" href="/contact{{ linkparams }}">Connect</a>
+                    {% endif %}
                 </div>
 
                 <div class="pointer columns show-for-large large-12 text-center rellax" data-magellan data-threshold="0" data-rellax-speed="1">
