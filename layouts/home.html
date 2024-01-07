@@ -18,7 +18,7 @@
             }
 
             .header {
-                background: url("assets/images/content/agency-bg.jpg") top center no-repeat;
+                background: url("assets/images/content/agency-bg.webp") top center no-repeat;
                 background-size: cover;
                 font-family: Halcom-Bold, Bold-Fallback, Arial, sans-serif;
                 font-size: 1.5em;
@@ -160,13 +160,13 @@
                 transform: rotate(90deg);
             }
 
-            .header .pointer svg {
+            .header .pointer img {
                 rotate: 90deg;
                 animation: bounce 1.8s infinite;
             }
 
             .page {
-                background: url("assets/images/content/agency-bg-bottom.jpg") bottom center no-repeat;
+                background: url("assets/images/content/agency-bg-bottom.webp") bottom center no-repeat;
                 background-size: 100%;
             }
 
@@ -295,7 +295,7 @@
                 padding-top: 8em !important;
             }
 
-            .intro img {
+            .intro .intro-img {
                 width: 300px;
                 border-radius: 20px;
                 margin: 1em 2em 2em;
@@ -386,7 +386,7 @@
                 opacity: 50%;
             }
 
-            .banner a:hover svg {
+            .banner a:hover img {
                 animation: bounce 1s;
             }
 
@@ -482,7 +482,7 @@
 
                 <div class="logo columns small-12 medium-8 large-5 text-center">
                     <a href="/{{ linkparams }}">
-                        <img src="/assets/images/logos/webelements-horizontal.png" title="{{ info.company }}" alt="{{ info.company }}" />
+                        <img src="/assets/images/logos/webelements-horizontal.webp" title="{{ info.company }}" alt="{{ info.company }}" />
                     </a>
                 </div>
 
@@ -532,9 +532,7 @@
 
                 <div class="pointer columns show-for-large large-12 text-center rellax" data-magellan data-threshold="0" data-rellax-speed="1">
                     <a href="#content" class="content">
-                        <svg viewBox="0 0 20 25" width="1em">
-                            <path d="M7.3 0L0 7.1l5.5 5.4L0 17.9 7.3 25 20 12.5 7.3 0zm-5 17.9l5.5-5.4-5.5-5.4 5-4.9 10.4 10.3L7.3 22.8l-5-4.9z" fill="#fff" />
-                        </svg>
+                        <img src="/assets/images/content/arrow.svg" width="25px" height="20px" title="View More" alt=">" />
                     </a>
                 </div>
             </header>
